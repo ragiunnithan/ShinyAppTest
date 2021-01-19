@@ -9,12 +9,12 @@ shinyServer(function(input, output){
   #1) It is reactive and therefore should be automatically 
   #re-executed when input changes.
   #2) Its output type is a plot
-  output$tplot <- renderPlot({
+  output$hist <- renderPlot({
     
     #generate an rnorm distribution and plot it
     
     dist <- rnorm(input$obs)
-    hist(dist)
+    hist(dist) 
     
   })
 })
